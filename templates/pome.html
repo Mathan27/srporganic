@@ -1,0 +1,142 @@
+{% load static %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body 
+{background-image: url('https://thumbs.dreamstime.com/b/mango-fruit-tree-garden-background-red-ivory-natural-blur-tropical-188269529.jpg');
+    font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cultivation</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Harvesting</a>
+      <a href="{% url 'home' %}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Dashboard</a>
+      
+      
+      
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
+
+	 <!-- The Band Section -->
+     <div class="container"  id="band">
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Pomegranate Cultivation</h1>
+					</header>
+                                        <footer>
+						<h3>About Pomegranate</h3>
+                                               <p>Pomegranate (Punica granatum L.) is an important fruit crop grown in India.it is originated in Iran and extensively Pomegranate farming in done in the Mediterranean countries like Spain, Morocco, Egypt, Iran, Afghanistan, and Baluchistan. It is cultivated to some extort in Myanmar, China, USA, and India.</p>
+                                                <img src="{% static 'images/13.jpg' %}" align="center" width="1000" height="500">
+                                                <h3>Benefits:</h3>
+                                                <p>Packed with antioxidants adequate to those in tea leaf and wine, and particularly loaded with Vitamin C and potassium, pomegranates are believed to help:</br>Lower Risk of heart condition</br>Lower Risk of Cancer, particularly Prostate and Breast</br>Lessen Symptoms of Diarrhea</br>Reduce steroid alcohol</br>Control Your Weight</br>Fight Cell harm</br>
+                                                </div></div>
+                        <div class="w3-black" id="tour">
+                         <div class="inner container">
+                                                  
+                                                    <h3>Types of Pomegranate:</h3>
+                                                 <p><h3>Bhagwa</br><img src="{% static 'images/14.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3 align="center">Arakta</br><img src="{% static 'images/15.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3 align="right">Mridula</br><img src="{% static 'images/16.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3>Dholka</br><img src="{% static 'images/17.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3 align="center">Ganesh</br><img src="{% static 'images/18.jpeg' %}" align="center" width="250" height="250"></br>
+                                                 <h3 align="right">Ruby</br><img src="{% static 'images/19.jpg' %}" align="center" width="250" height="250"></br>
+                                                 </div></div>                                                        
+                                                 <div class="w3-black" id="contact">
+                                                    <div class="inner container">
+                                                             
+                                                 <h3>Soil</h3>
+                                                 <img src="{% static 'images/5555.jpg' %}" align="center" width="1000" height="500">
+                                                 <p>Considering the soil requirement, it can be grown under different types of soil, from low-fertile to high-fertile soil. However, in deep loamy, it gives very good yield. It can tolerate salinity and alkalinity in the soil to a certain extent Soil having pH range between 6.5 – 7.5 is ideal for Pomegranate farming</p>
+                                                 
+                                                <h3>Propagation method</br>Hardwood cutting propagation</h3>
+                                                <p>It easy method but its success rate is lesser, so this method is not popular among farmers. For Cutting selected from a one-year-old tree of 9 to 12 inches (25 to 30 cm) long having 4-5 buds are better for higher rooting and survival.<img src="{% static 'images/22.jpg' %}" align="center" width="500" height="500">
+                                                 <h3>Air-layering propagation:</h3>
+                                                 <p>Its most common practice by farmers for raising new plants. For air layering method, select 2 to 3 years old plants and air-layered followed by IBA (1,500 to 2,500 ppm) treatment for better rooting.</br>From a single plant around 150 to 200 rooted cuttings can be obtained. Rainy season is best suited for layering. It takes around 30 days for roots. After 45 days, the layered plants should be detached from the mother plant.</p>                                       <img src="{% static 'images/23.jpg' %}" align="center" width="500" height="500">       
+                                                <h3>Pit preparation and planting</h3>
+                                                <p>Ninety-days old Pomegranate plants ready for transplanting into the main field in pits.</br>Prepare a suitable size of the pit is 60 cm x 6o cm x 60.</br>Most ideal planting distance followed by farmers is 10 to 12 ft (3 to 3.6 m) between plants and 13-15 ft (3.9 to 4.5 m) between rows.</br>During monsoon, pits are filled with farmyard manure (10 kg), single superphosphate (500 gm), neem-cake (1 kg).</br>The optimum time for pomegranate planting is in the rainy season (July-August) when sufficient soil moisture is available for optimum growth of plants. Fertilizers management in Pomegranate farming pomegranate can be grown even in the less fertile soil, but thee recommended a dose of chemical fertilizers should be incorporated in the pit for better production and quality of fruits.</p>                            
+                                                <h3>Irrigation</h3>
+                                                <p>Pomegranate is a drought tolerant fruit crop, which can sustain under water scarcity to some extent. Regular irrigation is also essential to reduce fruit splitting which is the major disorder of fruits.</br>During winter irrigation should be applied at 10 to 12 days of interval whereas during summer at 4 to 5 days interval. Most of the farmers supplied water through drip irrigation which helps in saving of water and convenient to apply fertilizers.</p>
+                                                <h3>Plant-protection</h3>
+                                                <p>In addition to measures such as pruning the trees, applying fertilizer, caring for the bottom crops, occasional crop protective measures and harvesting, it is also necessary to regularly check on the development of the fruits. If the crown is well formed during the early stages of the trees, and allows enough light to filter through and air to circulate, then only old, dead wood needs to be removed. The development of blossoms and fruit must be checked regularly. The alternating phases of mango yields also need to be taken into account. In addition to this alternation, poor blossoms and fruit development can have several causes. In the case of young trees, too much nitrogen (either through fertilizers or from a bottom culture with a high legume content) can prevent blossoming, as can watering the bottom crops during the blossoming period. In addition, an over-ageing of the crown in older trees can also lead to a lack of fruiting lateral. This can be alleviated with rejuvenation pruning.</p>
+                                                 <h3>Pests</h3>
+                                                <img src="{% static 'images/21.jpg' %}" align="right" width="350" height="350">  
+                                                <p>Pomegranate butterfly (or) Fruit borer. (Deudorix isocrates) It is a major pest, which bore into the developing fruits, feed inside and making fruit susceptible to fungal and bacterial infection</br>It can be controlled by bagging young fruits at the early stage with polyethylene bags, spray phosphamidon 0.03 % or sevin @4 gm</br>It makes holes on the main trunk and forms networks of tunnels inside it. Feeding on bark during nights and fill it with excreta</br>It can be effectively managed by plugging the hole with cotton dipped in petrol or kerosene, chloroform, carbon bisulphide followed by covering with mud. Nowadays bagging of fruits is also practiced by the farmers. This helps up to a certain extent and also improves fruit quality.</p>                                                                                              
+                                               <h3>Diseases</h3>
+                                               <p>Bacterial leaf spot or oily spot It is characterized by the formation of small-dark brown water-soaked spots on leaf, twig, stem, and fruits. Cracking can be observed with the shining appearance at a severe stage of infection. It is most severe in the rainy season</p>
+                                               <h3>Control</h3>
+                                               <p>It can be measured at some extent by spraying of streptocycline at the rate of 0.5 g/ liter and mixing with copperoxychloride at the rate 2 g/ liter on three consecutive days.
+                                               <h3>Fruit cracking or fruit splitting</h3>
+                                               <p>It is one the most severe disorder due to the irregular irrigation, boron deficiency and sudden fluctuation in nocturnal and diurnal temperatures, fruits are cracked, which is a common problem in pomegranate. Spraying of boron at the rate 0.1% and GA3atthe rate 250 ppm disease can be minimized to some extent. Besides, maintaining proper soil moisture level; selecting cracking tolerant variety are some preventive measures.
+                                               <h3>Harvesting</h3><img src="{% static 'images/20.jpg' %}" align="right" width="250" height="250"> 
+                                               <p>Pomegranate harvesting is starting after 150 to 180 days from flowering to fruit maturity. But it depends on genotype, climatic condition, and growing region. Harvesting of fruits should be done at optimum maturity stage because early harvesting results from the dull, immature and improper ripening of fruits whereas late harvesting leads to more prone to the attack of disorders. However, Pomegranate a non-climacteric fruit which should be harvested after at proper ripening stage.
+                                               <h3>Postharvest Handling</h3>
+                                               <p>After harvesting, fruits should be sorted out because diseased and cracked fruits should be removed and healthy fruits are selected for further treatment. After sorting, fruits should be washed with solution sodium hypochlorite at the rate 100ppm in water. This treatment will be helpful to reduce microbial contamination and to maintain longer shelf-life.
+                                               </footer>
+				</div>
+			</section>
+
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+            <script src="{% static 'assets/js/main.js' %}"></script>
+            </div></div>
+
+            <script>
+                // Automatic Slideshow - change image every 4 seconds
+                var myIndex = 0;
+                carousel();
+                
+                function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 4000);    
+                }
+                
+                // Used to toggle the menu on small screens when clicking on the menu button
+                function myFunction() {
+                  var x = document.getElementById("navDemo");
+                  if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                  } else { 
+                    x.className = x.className.replace(" w3-show", "");
+                  }
+                }
+                
+                // When the user clicks anywhere outside of the modal, close it
+                var modal = document.getElementById('ticketModal');
+                window.onclick = function(event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+                </script>
+                
+                

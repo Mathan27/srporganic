@@ -1,0 +1,140 @@
+{% load static %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body 
+{background-image: url('https://thumbs.dreamstime.com/b/mango-fruit-tree-garden-background-red-ivory-natural-blur-tropical-188269529.jpg');
+    font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cultivation</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Harvesting</a>
+      <a href="{% url 'dashboard' %}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Dashboard</a>
+      
+      
+      
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
+
+	 <!-- The Band Section -->
+     <div class="container"  id="band">
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+         
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Guava Cultivation</h1>
+					</header>
+                                        <footer>
+						<h3>About Guava</h3>
+                                                Guava (Psidium guajava L., Myrtaceae)  is a small tree with a spreading, broad top that develops from a short trunk. It is native to the American tropics but has become naturalized in practically all tropical and subtropical climates of the world. Guava is an important fruit for some countries and is an popular dessert in Latin America. Further, guava is cultivated as fence, ornamental plant and for timber products.</br>As a general rule, guava requires little attention. Therefore, guava is easily feasible under organic management. Organic guava as a main crop or as part of mixed fruit gardens is produced in many tropical and subtropical countries</p>
+                                                <img src="{% static 'images/9.jpg' %}" align="center" width="1000" height="500"></br>
+                                                </br><h3>Benefits:</h3>
+                                                <h3>1.Lowers Cholesterol</br></h3>
+<p>LDL or Low-density lipoprotein are one of the five major groups of lipoproteins which transport all fat molecules throughout your body. It is the excess of this class of cholesterol that may cause a host of health disorders particularly that of heart. According to an article published in Nutrition and Metabolism, study participants who drank guava leaf tea had lower cholesterol levels after eight weeks.</p>
+                                                <h3>2.Manages Diabetes</h3>
+<p>Japan has approved guava leaves tea as one of the foods for specified health uses to help with the prevention and treatment of diabetes. The compounds in the tea help regulate blood sugar levels after meals, by inhibiting the absorption of two types of sugars - sucrose and maltose. According to an article published in Nutrition and Metabolism, guava leaf tea inhibits several different enzymes that convert carbohydrate in the digestive tract into glucose, potentially slowing its uptake into your blood.</p>
+                                                <h3>3.Promotes Weight Loss</h3><p>Looking to shed the extra inches around your belly? Sip into guava leaf tea. Guava leaves help prevent complex carbs from turning into sugars, promoting rapid weight loss. Drink guava leaves tea or juice regularly to reap the benefits.</p>
+                                                <h3>4.Fights Cancer</h3><p>"Guava leaves can lower the risk of cancer" - especially breast, prostate, and oral cancers - due to high quantities of the antioxidant lycopene. Various studies have revealed that lycopene plays a significant role in lowering the risk of cancer.</p>
+                                                 <h3>5.Heals Cold and Cough</h3><p>Guava leaves contain high levels of Vitamin C and iron, and a decoction of guava leaves is very helpful in relieving cough and cold as it helps get rid of mucus. It also disinfects the respiratory tract, throat and lungs.</p>
+                                                  <h3>Soil</h3>
+                                                 <p>The guava is a hardy plant that grows in most soil types. It responds well to soils with good drainage and high organic matter. Loam and alluvial types of soil is most ideal. Guava prefer a well-drained soil in the pH range of 5 to 7. Guava is fairly tolerant to soil salinity. While guava trees tolerate poor soils, fruit production is substantially enhanced when grown in rich soils under proper management</p>
+                                                </div></div></div>
+                                                <!-- The Tour Section -->
+                            <div class="w3-black" id="tour">
+                              <div class="inner container">
+                                                                    
+                                                
+                                                 <h3>Propagation and Planting</h3>
+                                                 <img src="{% static 'images/10.jpg' %}" align="right" width="1000" height="500"></br>
+                                                 <p>Guava is easily grown from seeds but seedling trees are variable in fruit quality and take longer to fruit. Seed germination is used to produce seedlings in breeding programs or to produce rootstocks for grafting of desirable cultivars. Propagation is largely by vegetative means and the most satisfactory method is budding. In budgrafting the stock plants are first sown from seeds directly into individual polythene bags. After they have attained pencil size the stock plants are ready for grafting. The grafted seedling is ready for transplanting 2 – 3 months later.</p>
+                                                <h3>Tree Nutrition</h3>
+                                                <p>When trees in an orchard begin to produce commercial quantities of fruit, fertilizer is usually given after harvest, together with pruning and irrigation to encourage new growth. It takes about<b> 4.5 – 5 month from floral initiation to fruit maturation. Organic fertilizer  should therefore be applied around 4 – 4.5 month before expected harvest period, adjusted to the prevailing temperatures and moisture. Organic fertilizer is applied around 2 weeks before highly soluble chemical fertilizers in order to give to the soilmicro-organisms time to mineralize organically  bound nitrogen. In subtropical climates where winter temperatures are relatively low, only one major crop season occurs and fertilization is adjusted accordingly</p>
+                                                 <h3>Water Management and Irrigation</h3>
+                                                <p>Although the guava can tolerate low moisture condition and long dry periods, a constant availability will promote fast growth and leaf flushes. Lack of moisture will delay bloom and cause the fruit to drop<p>
+                                                <h3>Freeze Protection</h3>
+                                                <p>Freeze protection is essential for survival of young guava trees in subtropical regions with cold winters. Soil banks are excellent for freeze protection for several years: put them up in late autumn and remove them in spring. Protection of the top can be achieved using covers such as blankets or loans; the cover is draped over the tree, the corners pulled outward and anchored to the ground. It is neither necessary nor desirable that the cover reach the ground.</p>
+                                                
+                                            </div>
+                                            <div class="w3-black" id="contact">
+                                            <div class="inner container">
+                                                                                                                       
+                                                                         
+                                                <h3>Pest and Disease:</h3>
+                                                 <h3>Pest Management</h3>
+                                                 <img src="{% static 'images/11.jpg' %}" align="right" width="500" height="200">
+                                                 <p>A number of pests attack the guava such as the fruit fly, thrips, mealy bugs, scale insects, spider mites, aphids etc. There are several species of parasitic wasps and predators that keep scale insects and mealy bugs under reasonable control. However, some insects cause damage to guava cultivars, in particular thrips and fruit flies. Birds or fruit bats also usually attack mature guava fruit.<br>Organic pest and disease management prioritizes indirect control methods.</p>                                                 
+                                                <h3>Disease Management</h3>
+                                                <p>Some diseases are specific to certain countries and others are widespread where guavas are grown. In many cases, they do not cause economic damage. Anthracnose and Mucor fruit rot are widespread and considered important diseases in most countries. Organic growers first make use of indirect center methods before applying direct control methods.<br>Harvesting and Post Harvest Handling</p>                            
+                                                <h3>Harvesting</h3>
+                                                <img src="{% static 'images/12.jpg' %}" align="right" width="500" height="300">  
+                                                <p>In tropical regions, guava is available throughout the year, although not always in the same quantities. Guava fruits are harvested when they change color from green to light green. Depending on guava cultivar and the growing conditions, it takes about <b>100 to 150 days from bloom to fruit harvest.</b> Ripe guava fruits measure 4 to 10 cm and weight from 100 to 450 g. Ripe fruit has a thin greenish-yellow skin and a flesh of varying thickness that may be white, yellow-pink or red. Flavor and aroma vary widely, from low-acid, sweet to low sugar and highacidity types. Most of the famous cultivars contain numerous small, hard, yellowish-cream colored seeds that are imbedded in the soft pulp (there are a few seedless cultivars).</p>
+                                                                                              
+                                               <h3>Post-harvest Treatment</h3>
+                                                 <p>Guava is well suited to processing. The sweeter selections are more commonly eaten fresh, while the stronger flavored selections are more commonly used in jam, jelly, paste and other products.</p></br>
+                                            </footer>
+				</div>
+			</section>
+
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+    <script>
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 4000);    
+        }
+        
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+          var x = document.getElementById("navDemo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
+        

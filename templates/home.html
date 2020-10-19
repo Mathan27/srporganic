@@ -1,0 +1,43 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block content %}  
+
+<div class="container" >
+
+<div class="jumbotron text-center" style="background-color:greenyellow;">
+    <h1>Organic Farming Application</h1>
+    <p class="lead">Welcome to our Organic web application Register and Login</p>
+    <div>
+        {% if user.is_authenticated %}
+        <a  class="btn btn-primary" href = "{% url 'dashboard' %}">Dashboard</a>&nbsp;
+        <a  class="btn btn-primary">Profile</a>&nbsp;
+        <a  class="btn btn-primary" href="{% url 'logout' %}">Logout</a>&nbsp;
+        {% else %}
+        <a  class="btn btn-primary" href="{% url 'register' %}">Register</a>&nbsp;
+        <a  class="btn btn-primary" href="{% url 'login' %}">Login</a>
+       {% endif %}
+    </div>
+</div>
+    <div class="row">
+    <div class="col-md-4">
+        <h3><b>Importance of Organic Farming</b></h3><hr style=" border: 2px solid greenyellow;border-radius: 5px;">
+        <p>Organic farming yields such vital benefits as preservation of soil's organic composition. Organic farmers utilize practices that: Maintain and improve fertility, soil structure and biodiversity, and reduce erosion. Reduce the risks of human, animal, and environmental exposure to toxic materials.</p>
+    </div>
+    <div class="col-md-4">
+        <h3><b>Objective of Organic Farming</b></h3><hr style=" border: 2px solid greenyellow;border-radius: 5px;">
+        <p>The aim of organic farming is to establish and maintain soil-plant, plant- animal and animal soil interdependence and to create a sustainable agro- ecological system based on local resources, approaching in this way the concept of functional integrity of systems.</p>
+    </div>
+    <div class="col-md-4">
+        <h3><b>About Our Webiste</b></h3><hr style=" border: 2px solid greenyellow;border-radius: 5px;">
+        <p>We are build by Using<b> MEAN Stack </b>
+           <b> <br>M - Monogdb
+            <br>E - Express js
+            <br>A - Angular
+            <br>N - Node js </b> 
+        </p>
+    </div>
+   </div>
+</div>
+
+{% endblock %}

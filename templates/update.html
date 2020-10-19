@@ -1,0 +1,28 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block content %}
+<form action="" method="POST">
+    <h1>Update Profile</h1><hr>
+    {% csrf_token %}
+    <div class="container shadow p-3 mb-5 bg-white rounded">
+    <fieldset>
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" name="name" value="{{output.name}}">
+      </div>
+      <div class="form-group">
+        <label>Email Id</label>
+        <input type="text"  class="form-control" name="email" value="{{output.email}}">
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="text" class="form-control" name="phone" value="{{output.phone}}">
+    </div>
+    
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+    </div>
+  </form>
+
+
+{% endblock %}

@@ -1,0 +1,145 @@
+{% load static %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body 
+{background-image: url('https://thumbs.dreamstime.com/b/mango-fruit-tree-garden-background-red-ivory-natural-blur-tropical-188269529.jpg');
+    font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cultivation</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Harvesting</a>
+      <a href="{% url 'home' %}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Dashboard</a>
+      
+      
+      
+    </div>
+  </div>
+  
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
+
+	 <!-- The Band Section -->
+     <div class="container"  id="band">
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+         
+		<!-- Banner -->
+			<section id="banner">
+				<div class="inner container">
+					<header>
+						<h1>Mango Cultivation</h1>
+					</header>
+                                        <footer>
+						<h3>About Mango</h3>
+                                                A mango is a stone fruit produced from numerous species of tropical trees belonging to the flowering plant genus Mangifera, cultivated mostly for their edible fruit. Most of these species are found in nature as wild mangoes</p>
+                                                <img src="{% static 'images/6666.jpg' %}" align="center" width="1000" height="500">
+                                                <h3>Benefits:</h3>
+                                                <p>1.Improved Digestive System</br>2.Improves Eyesight</br>3.Immune system booster</br>4.Helps Diabetics</br>
+                                                <h3>Types of mangoes:</h3>
+                                                 <p><h3>Tommy Atkins</br><img src="{% static 'images/7777.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3 align="center">Kent</br><img src="{% static 'images/8888.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3 align="right">Alphonso</br><img src="{% static 'images/9999.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3>Haden</br><img src="{% static 'images/1.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3 align="center">Palmer</br><img src="{% static 'images/2.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3 align="right">Glenn</br><img src="{% static 'images/3.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3>Francis</br><img src="{% static 'images/4.jpg' %}" align="center" width="250" height="250"></br>
+                                                 <h3 align="center">Neelam</br><img src="{% static 'images/5.jpg' %}" align="center" width="250" height="250"></br></br>
+                                                 </div></div></div>
+                      <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="inner container">
+                              
+    						 <h3>Field Planting</br>Steps to be followed:</h3>
+                                                 <p>1.Propagate and harden the seedlings or planting materials. Expose to direct sunlight at least one week before field planting.</br>2.Clear the field plows and harrows if possible. Stake planting site 20 x 20 + 1m quincunx or 15 x 15m triangle to have 50 hills</br>3.Dig 1 cubic meter holes and replace the soil with rich/fertile topsoil and fully decomposed organic matter or organic fertilizer. Earthworm casting is ideal mix to topsoil. Fully decomposed animal and plant waste with beneficial bacteria and fungi (EM, IMO, BMO, BYM)</br>Periodically add more water to maintain a constant 5-inch depth as the plants grow.</br>4.Planting procedure: Drench the seedling in plastic bag and press the soil to loosen it in the bag.</br>5.Make a hole on the planting site and pour in water to drench the soil. Gently remove seedling from plastic bag and place in hole, cover and press soil.</br>6.Place a stake firmly besides the seedling and tie the seedling to it for stable support in case of strong wind and rain.</br>
+                                                 
+                                                <h3>Planting Methods</h3>
+                                                <p>The method chosen for planting is dependent upon the way they are being cultivated and the site conditions. On a mango plantation where mangoes are the main fruit sort, the following distances between plants must be upheld:</br>1. On fertile ground with sufficient rainfall 10 x 10m</br>2.at semi-arid sites up to 15 x 15m</br>
+                                                 <img src="{% static 'images/6.jpg' %}" align="center" width="1000" height="500">
+                                                 <h3>Nutrient Requirements:</h3>
+                                                 <img src="{% static 'images/7.jpg' %}" align="right" width="500" height="500">
+                                                 <p><b> 1. Mangoes require few nutrients. Nevertheless, it is advisable to supply a mango plantation with compost and green manure during the growth period. The fertilizer should be applied after the tree has blossomed, so that it has enough nutrients to produce fruit. A high level of production can be achieved in this way by supplying compost in the mixed system of domestic garden.</br> 2. Special care should be taken that nitrogen is not made too readily available when beans are used as a bottom crops, because the vegetative growth of the fruit trees would then dominate.Average harvests over several years under less than optimum conditions usually yield between 5 and 10 tons per ha and year. The yields per tree can vary, and can deliver between 100 and 500 kg, according to conditions. The yields in household garden systems can be significantly more in comparison to mango plantations.</b></br></p>
+                                                 
+                                                <h3>Biological Methods of Plant Protection:</br>Disease:</h3>
+                                                <p>The most common diseases with mango trees are fungus and bacterial diseases. The first important preventative measure is make sure that the propagation segments are healthy. The scions that were raised in tree nurseries and whose origins are perhaps unclear should be carefully examined. They shall not have been treated with any synthetic or chemical agents.</p>                            
+                                                <h3>Pests:</h3>
+                                                <p>The worst pests for mangoes are cotton scales, mealy bugs, cicadas and black flies (create honey dew). These are all sucking insects that live on the leaves, young buds and shoots. They can cause a lot of damage. Yet they all have natural enemies, such as e.g. ladybird larvae, wasps, spiders and other types, such as parasitic fungi e.g. with cicadas and black flies.</br>An ecological plantation with a variety of crops, enough plots under different crops e.g. forest and a sufficient amount of vegetation to cover the soil and enrich the variety of species (e.g. mulching only right after the plants have flowered) will provide enough enemies to combat the pests so that measures against them are usually unnecessary. Cicadas are averse to open, well ventilated soil; also, the soil must be drained well to avoid wet patches.</br>In emergencies, the following methods should help:
+ Scale insects can be regulated with a “winter-spraying”</br>i.e. with paraffin oil (white oil) shortly before the larvae hatch from their eggs. The paraffin oil is sprayed on as a 3 % water emulsion.Should they infest the tree, a solution of 1% soft soap</p>
+                                                <h3>Crop Monitoring</h3>
+                                                <p>In addition to measures such as pruning the trees, applying fertilizer, caring for the bottom crops, occasional crop protective measures and harvesting, it is also necessary to regularly check on the development of the fruits. If the crown is well formed during the early stages of the trees, and allows enough light to filter through and air to circulate, then only old, dead wood needs to be removed. The development of blossoms and fruit must be checked regularly. The alternating phases of mango yields also need to be taken into account. In addition to this alternation, poor blossoms and fruit development can have several causes. In the case of young trees, too much nitrogen (either through fertilizers or from a bottom culture with a high legume content) can prevent blossoming, as can watering the bottom crops during the blossoming period. In addition, an over-ageing of the crown in older trees can also lead to a lack of fruiting lateral. This can be alleviated with rejuvenation pruning.</p>
+                                                </p> </div>
+                 <div class="w3-black" id="contact">
+                 <div class="inner container">
+                                                                                            
+                                                <h3>Harvesting</h3>
+<img src="{% static 'images/8.jpg' %}" align="right" width="500" height="500">  
+                                                <p>A mango plantation will supply its first commercially marketable amount of fruit around 4-5 years after being planted.</br>At the end of the fruit’s development period, the peel will turn leathery. The fruit is ripe for harvesting when the skin has turned from green to red or yellow. Some farmers wait to harvest until the first fruits have fallen to the ground of their own accord. Yet because the fruits fail to ripen at the same time, the color change must nevertheless be checked regularly.</br>The fruits are harvested by breaking them off or with a pair of scissors. A pair of steps or a cherry-picker will be needed for tall trees. With medium tall trees (up to ca. 4 m), the fruits can be picked individually with the help of a harvesting rod. Too many fruits should not be placed into one sack to avoid bruising them. Such fruits will not keep for long, and cannot be sold as fresh. Any damaged fruits should be separated during harvesting to prevent the spread of fungus infections.</p>
+                                                                                              
+                                               <h3>Post-harvest Treatment</h3>
+                                                 <p>With hundreds of varieties, mangoes are differentiated by weight (250 g to 2 kg), shape (oval, pear or kidney-shaped), color of the skin (green, yellow, orange-yellow, orange-red) and taste (more or less aromatically sweet). The flesh is yellow to yellow-orange, juicy and has a varying fiber content according to variety, whereby fruits with a high fiber content are generally not sold as fresh fruit, but are processed to remove fibers. Mangoes have many different uses. Ripe fruits can be eaten fresh, or processed into juice, pulp, concentrate, candied fruits, jams, chutneys, canned fruits or dried.</br>If the mangoes are to be sold as fresh fruits, they must be treated with warm bath water to remove any dirt or funguses from the peel. It is recommendable to place them in a 55°C water bath for 5 minutes and then let them cool down slowly.</br></p>
+                                                </footer>
+                                            </div>
+                                 
+                
+                                    
+                                    </section>
+
+                                    
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+        </div>
+    </div>
+<script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 4000);    
+    }
+    
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
+    
+    

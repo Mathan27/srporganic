@@ -1,0 +1,189 @@
+{% load static %}
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">About</a>
+    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Cultivation</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">References</a>
+    <a href="{% url 'home' %}" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Dashboard</a>
+    
+    
+    
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.egypttoday.com/siteimages/Larg/16918.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Starting Stage</h3>
+      <p><b>This is Starting Stage how it looks like after one month</b></p>   
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.farmingindia.in/wp-content/uploads/paddy-cultivation.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Middle Stage</h3>
+      <p><b>This is Mid Stage How its looks like More than one month</b></p>    
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="https://www.agrifarming.in/wp-content/uploads/2015/09/Rice-Cultivation-2.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <h3>Final Stage</h3>
+      <p><b>In this Stage we can cultivate, Thanking You..</b></p>    
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="container"  id="band">
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+  <!-- Banner -->
+      <section id="banner">
+          <div class="inner container">
+              <header>
+                  <h1>Crops Cultivation</h1>
+              </header>
+                                  <footer>
+                  <h3>About Rice</h3>
+                                          <p>Rice is the seed of the grass species Oryza glaberrima (African rice) or Oryza sativa (Asian rice). As a cereal grain, it is the most widely consumed staple food for a large part of the world's human population, especially in Asia and Africa. It is the agricultural commodity with the third-highest worldwide production (rice, 741.5 million tonnes in 2014), after sugarcane (1.9 billion tonnes) and maize (1.0 billion tonnes)</p>
+                                          <img src="{% static 'images/4444.jpg' %}" align="center" width="1000" height="500">
+                                          <h3>Characteristics</h3>
+                                          <p>The rice plant can grow to 1–1.8 m (3 ft 3 in–5 ft 11 in) tall, occasionally more depending on the variety and soil fertility. It has long, slender leaves 50–100 cm (20–40 in) long and 2–2.5 cm (3⁄4–1 in) broad</p>
+                                           <h3>Rice-growing environments</h3>
+                                           <p>Lowland, rainfed, which is drought prone, favors medium depth; waterlogged, submergence, and flood prone</br>Lowland, irrigated, grown in both the wet season and the dry season</br>Deep water or floating rice</br>Coastal wetland</br>Upland rice is also known as Ghaiya rice, well known for its drought tolerance
+                                            <h3>Growing rice from seed isn't as hard as you may think</h3>
+                                           <p>Soak the seeds in water for about 36 hours and allow to dry for another 24 hours.</br>Fill a bucket with 6 inches of a mixture of soil and compost.</br>Add about 5 inches of water to cover the soil.</br>Evenly spread the seeds in the bucket and place in a warm, sunny area.</br>Periodically add more water to maintain a constant 5-inch depth as the plants grow.
+                                           
+                                          <h3>Soil</h3>
+                                          <p>A rice paddy needs to hold water well. Ideally, soil needs to include about 50% clay content. Also, soil underlain with an impervious hardpan or clay-pan helps to hold water.
+Depending on the type of rice and your climate, it can take up to 160 days before you can harvest any grain. But don't expect a harvest big enough for a good meal. If you want rice by the pound, that's better left to the professionals.</p>
+                                           <img src="{% static 'images/5555.jpg' %}" align="center" width="1000" height="500">
+                                           <h3>5 Steps involved in Rice Cultivation:</h3></br>
+                                          <h3>1. Preparation of Field:</h3>
+                                           <p>Paddy farmers used to get their fields ready before the rainy season. The weeds are cleared and the field is ploughed by buffaloes or tractors to a depth of few inches. Manures and fertilizers are added to the soil. The whole surface then remained covered with water of about 2.5 cm. The field is then ready for receiving seedlings from the nursery.</p>	
+                                          <h3>2. Transplantation:</h3>
+                                          <p>Generally paddy seedlings are first prepared in nursery and then transplanting is done in the field after about 40 days. Although in some areas of India and Sri Lanka seeds have been sown directly in the field and the seedlings sprout when the rain comes. But yield of paddy from transplanting is greater than the direct sowing. The transplanted paddy also grows faster because of regular spacing and matures within a shorter period.</p>                             
+                                          <h3>3. Field Maintenance:</h3>
+                                          <p>Paddy fields also require regular maintenance, such as occasional weeding and thinning out the more crowded patches, level of water is to be maintained according to the growth and the fields are drained dry before the crop is harvested.</p>
+                                          <h3>4. Harvesting:</h3>
+                                          <p>The traditional harvesting system is either through a curved knife or a sharp-edged knife. It is very labour-intensive. Harvesting is done in the dry season, when the weather is sunny. Mechanical combines which cut and thresh are used in Japan.</p>
+                                          <h3>5. Threshing, Winnowing and Milling:</h3>
+                                          <p>After the paddy stalks have been gathered and dried for a brief spell, their threshing is usually done. By beating the sheaves against the bars, the grains are separated from the stalks. Now threshing machines have also been developed.</p>
+                                           
+
+</div>
+
+  <!-- The Tour Section -->
+  <div class="w3-black" id="tour">
+    <div class="inner container">
+        
+        <h3>Seeding and planting rice</h3>
+                                                 <h3>Several seeding and planting methods are practiced:</h3>
+                                                 <p>• Dry seeding with drill.</br>
+•	Dry seeding by broadcast or air. Most of the rice, in large fields, is sown by aircraft. Experienced agricultural pilots use satellite guidance technology to broadcast seed accurately over the fields.</br>
+•	Water seeding with pre-germinated seed.</br>
+•	Seedlings are transplanted by hand or by machines to fields which have been flooded by rain or river water.</br>
+•	Seedlings 25-30 days old, grown in a nursery are usually transplanted at 20 x 15 or 20 x 10 or 15 x 15 cm spacing in a well prepared main field and normally this will have a population of 335,000 to 500,000 hills/ha (33 to 50 hills/m2), whereby each hill contains 2-3 plants</br></p>
+                                                <img src="{% static 'images/1111.jpg' %}" align="center" width="1000" height="500">
+                                                <h3>Flooding rice fields:</h3>
+                                                <p>The traditional method for cultivatingrice is flooding the fields while, or after, setting the young seedlings. This simple method requires sound planning and servicing of the water damming and channeling, but reduces the growth of less robust weed and pest plants that have no submerged growth state, and deters any rodents and pests. Consistent water depth has been shown to improve the rice plants' ability to compete against weeds for nutrients and sunlight, reducing the need for herbicides. Rice crops are grown in 5–25 cm of water depending on growing conditions. While with rice growing and cultivation the flooding is not mandatory, all other methods of irrigation require higher effort in weed and pest control during growth periods and a different approach for fertilizing the soil.</br>
+                                                <h3>Nutrient Management:</h3>
+                                                <p>Each growth stage of the rice plant has a different nutrient need. Keeping this in mind, farmers must ensure that the rice plant gets the proper nutrients at the right time.Prolonged flooding of rice fields ensures that farmers are able to conserve soil organic matter and also receive free input of nitrogen from biological sources. If higher yields are required, more nutrients must be added to the soil.</br>
+                                                <h3>Crop Health Management:</h3>
+                                                <p>The rice plant can come under threat from different sources in the field. These include attack by rodents, insects, weeds and disease. Farmers use many different strategies to protect and maintain crop health.A good understanding of pest behavior, natural enemies, host plants, other organisms and the environment help determine the type of pest management required.Farmers manage weed control through water management and land preparation, by hand weeding, and in some cases with the application of herbicides.</br>
+                                                <h3>Harvesting:</h3>
+                                                <p>Harvesting is the process of collecting the mature rice crop (rice paddy or rough rice) from the field. Depending on the variety, a rice crop usually reaches maturity at around 115-120 days after crop establishment.Harvesting activity includes cutting, stacking, handling, threshing, cleaning, and hauling. Good harvesting methods help maximize grain yield and minimize grain damage and deterioration.Harvesting can be performed manually or mechanically. Manual harvesting is common across Asia and involves cutting the rice crop with simple hand tools like sickles and knives.Manual harvesting is very effective when a crop has fallen over. However, it is labour intensive. Manual harvesting usually requires 40 to 80 man-hours per hectare and it takes additional labour to manually collect and haul the harvested crop.Mechanical harvesting using reapers or combine harvesters is the other option, but is not so common due to the availability and cost of machinery.After cutting, the rice must be threshed to separate the grain from the stalk and cleaned. Threshing can be done by hand or machine.</br>
+                                                 <h3>Post Harvest:</h3>
+                                                <p>After harvest, the rice grain undergoes a number of processes depending on how it will be used. These steps include drying, storing, milling, and final processing.Drying is the process that reduces grain moisture content to a safe level for storage. Drying is the most critical operation after harvesting a rice crop. Delays in drying, incomplete drying or ineffective drying will reduce grain quality and result in post harvest losses.
+                                                 <img src="{% static 'images/2222.jpg' %}" align="center" width="1000" height="500">
+                                                 <p>Proper storage conditions will ensure minimal loss of paddy rice due to changes in weather and moisture content, rodents, insects, microorganisms etc.Milling of rice is a crucial post-production step. The basic objective of a rice milling system is to remove the husk and the bran layers and to produce an edible, white or brown rice kernel that is sufficiently milled and free of impurities.
+					</footer>
+				</div>
+            
+      <!-- The Tour Section -->
+  <div class="w3-black" id="contact">
+    <div class="inner container">
+
+    <h1> REFERENCES</h1>
+    <p>1.Mohan Organic Farmer, Mappilai Samba paddy cultivation cell:98846 71440<br>
+    2.<a href="http://ofai.org/wp-content/uploads/2012/11/Organic-Farmers-and-Farms-of-TN.pdf" target="_blank">List of Organic Farmers</a>
+    <h1>Link</h1>
+    <iframe  src="https://www.youtube.com/embed/37Ufwnq5690"></iframe>
+    <iframe  src="https://www.youtube.com/embed/PYXho-gYwuM"></iframe>
+    <iframe src=" https://www.youtube.com/embed/giIxR6hw3sk"></iframe>
+    <iframe src="https://www.youtube.com/embed/fmXeiEYF1nE"></iframe>
+    </p>
+    
+    
+    </section>
+            
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+    </div>
+  </div>
+
+  
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+

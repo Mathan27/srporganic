@@ -1,0 +1,48 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block content %}
+
+<div class="limiter">
+    <div class="container-login100" style="background-image: url({% static 'images/bg-01.jpg' %});">
+        <div class="wrap-login100 p-t-30 p-b-50">
+            <span class="login100-form-title p-b-41">
+                Account Login
+            </span>
+            <form class="login100-form validate-form p-b-33 p-t-5" action="login" method="POST">
+                {% csrf_token %}
+
+                <div class="wrap-input100 validate-input" data-validate = "Enter Username">
+                    <input class="input100" type="text" name="name" placeholder="Name">
+                    <span class="focus-input100" data-placeholder="&#xe82a;"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input" data-validate="Enter password">
+                    <input class="input100" type="password" name="password" placeholder="Password">
+                    <span class="focus-input100" data-placeholder="&#xe80f;"></span>
+                </div>
+                <div>                     
+                    {% for message in messages %}
+                    <h3 style="color:red;font-size:15px;font-family:Verdana, Geneva, Tahoma, sans-serif">
+                        {{message}}</h3>
+                    {%endfor %}
+                </div>
+
+                <div class="container-login100-form-btn m-t-32">
+                    <button class="login100-form-btn">
+                        Login
+                    </button>
+                </div>
+                
+                <div class="container-login100-form-btn m-t-32">
+                    <span style="font-size: 20px;font-family:'Times New Roman', Times, serif">Don't have an account?</span>
+                    <a href="{% url 'register' %}" class="login100-form-btn " style="font-size: 17px;font-family:'Times New Roman', Times, serif;">
+                        Register Here
+                    </a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

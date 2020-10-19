@@ -1,0 +1,35 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block content %}
+<div class="container">
+<div class="bg">
+    <div class="row">
+    {% for content in contents %}
+      <div class="col-md-4">   
+        <mdb-card style="border-radius: 6rem;">
+        <!--Card image-->
+        <img src="{{content.img.url}}" alt="Card image cap" style="width:100%;height:60%">
+        <!--Card content-->
+        <mdb-card-body>
+            <!-- <img src="{{content.img.url}}" alt=""> -->
+       
+        <!--Title-->
+       
+        <mdb-card-title>
+            <h2><b>{{content.name}}</b></h2>
+            <hr style=" border: 2px solid greenyellow;border-radius: 5px;">
+        </mdb-card-title>
+        
+        <!--Text-->
+        <p> <b>{{content.desc}}
+        </b></p>
+        <a href="{% url 'vegsdetails' content.name %}" class="btn btn-success" name = "view">View</a>
+        </mdb-card-body>
+       </mdb-card>
+       <br><br><br><br><br>
+      </div>
+      {% endfor %}
+    </div>
+    </div>
+    </div>
+{% endblock %}    
